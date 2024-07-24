@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Auto Fill Form</title>
+  <style>
+    body {
+      width: 200px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    textarea {
+      width: 100%;
+      height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h3>Auto Fill Form</h3>
+
+  <p>Example JSON object:</p>
+
+  <pre>
+  {
+    "http://localhost": {
+      "#elementId": "Foo"
+    }
+  }
+  </pre>
+
+  <textarea id="selectors" placeholder="Enter selectors and values, one per line (selector=value)"></textarea>
+  <button id="saveSelectors">Save</button>
+  <script src="popup.js"></script>
+</body>
+</html>
